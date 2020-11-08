@@ -20,6 +20,10 @@ Download and move the `emails-input.js` file into your project's directory, then
 <script src="path/to/emails-input.js"></script>
 ```
 
+### Demo
+
+[https://parazsl.github.io/emails-input/](https://parazsl.github.io/emails-input/)
+
 ### Usage
 
 Add an input element to any form:
@@ -124,4 +128,4 @@ From there, you have 3 options:
 
 ### Notes
 
-The module was built with [IE11 compatibility](https://kangax.github.io/compat-table/es6/) in mind, meaning no ES6+ features were used. There are a few ways to modernize the module, like using TypeScript or transpiling the source using a loader in Webpack.
+The module was built with [IE11 compatibility](https://kangax.github.io/compat-table/es6/) in mind, meaning no ES6+ features were used. There are a few ways to modernize the module, like using TypeScript or transpiling the source using a loader in Webpack (while Webpack is being used here, its only aim was to create a minified bundle).
