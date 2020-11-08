@@ -10,8 +10,6 @@ var inputOptions = {
   removeContent: closeImg,
 };
 
-var emails = new emailsInput(inputOptions);
-
 function getRandomArrayElement(array) {
   return array[Math.floor(Math.random() * array.length)];
 }
@@ -27,11 +25,15 @@ function generateRandomEmail() {
   return randomName + '@' + randomDomain + '.' + randomTld;
 }
 
-addButton.addEventListener('click', function () {
-  var generated = generateRandomEmail();
-  emails.addEmail(generated);
-});
+document.addEventListener('DOMContentLoaded', function () {
+  var emails = new emailsInput(inputOptions);
 
-countButton.addEventListener('click', function () {
-  alert(emails.getEmailCount());
+  addButton.addEventListener('click', function () {
+    var generated = generateRandomEmail();
+    emails.addEmail(generated);
+  });
+
+  countButton.addEventListener('click', function () {
+    alert(emails.getEmailCount());
+  });
 });

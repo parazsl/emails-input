@@ -6,5 +6,8 @@ module.exports = {
     path: path.resolve(__dirname, 'dist'),
     filename: 'emails-input.js',
     library: 'emailsInput',
+    environment: {
+      arrowFunction: false,
+    },
   },
 };
